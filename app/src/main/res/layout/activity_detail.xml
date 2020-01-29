@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent" >
+
+
+        <ImageView
+            android:id="@+id/img_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            tools:src="@drawable/alphaboost_shoes"/>
+
+        <TextView
+            android:id="@+id/tv_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            tools:text="Alphaboost Shoe"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_desc_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            tools:text="Rp 2.000.000"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_country_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="White/Black/Gold "
+            android:textSize="12sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="16dp"
+                    android:text="Stock"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Available"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="16dp"
+                    android:text="Size"/>
+
+                <TextView
+                    android:id="@+id/tv_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="UK   7\nUK   8\nUK   8.5\nUK   9\nUK   9.5\nUK   10"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="16dp"
+                    android:text="Description"/>
+                <TextView
+                    android:id="@+id/tv_elevation_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    tools:text="Regular fit \nLace closure\nMesh upper\nLightweight and breathable\nSupportive speed-training shoes\nResponsive Boost midsole"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="16dp"
+                    android:text="Specification"/>
+                <TextView
+                    android:id="@+id/tv_spec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    tools:text="Regular fit \nLace closure\nMesh upper\nLightweight and breathable\nSupportive speed-training shoes\nResponsive Boost midsole"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/buttonbuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:text="BUY" />
+
+    </LinearLayout>
+</ScrollView>
